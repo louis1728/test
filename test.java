@@ -1,3 +1,4 @@
+//5555555
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -5,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class test {
-	
+
 	JFrame frame = new JFrame();
 	JLabel lbl_adult = new JLabel("大人 : ");
 	JLabel lbl_child = new JLabel("小孩 : ");
@@ -20,7 +21,7 @@ public class test {
 	JPanel panel3 = new JPanel();
 	JPanel panel4 = new JPanel();
 	Container cp = frame.getContentPane();
-	
+
 	public test() {
 		jbg.add(jrb_morning);
 		jbg.add(jrb_other);
@@ -36,7 +37,7 @@ public class test {
 		cp.add(panel2);
 		cp.add(panel3);
 		cp.add(panel4);
-		
+
 		btn_submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int count = 0;
@@ -85,7 +86,7 @@ public class test {
 	public static void main(String[] args) {
 		new test();
 	}
-	
+
 	public String calculate(int adult, int child, int time){
         long money = 0;
         int all = adult + child;
